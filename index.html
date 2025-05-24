@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Trabalho Externo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Controle de Trabalho Externo</h1>
+    
+    <div class="status-box">
+      <h2 id="status-text">Selecione um colaborador</h2>
+    </div>
+    
+    <div class="colaboradores-box">
+      <h2>Colaboradores</h2>
+      <div class="botoes-colaboradores" id="colaboradores-container">
+        <!-- Botoes serão inseridos aqui -->
+      </div>
+    </div>
+    
+    <div class="formulario-box" id="formulario-container">
+      <p>Selecione um colaborador para registrar</p>
+    </div>
+    
+    <div class="dupla-box">
+      <label>
+        <input type="checkbox" id="check-dupla"> Trabalho em dupla
+      </label>
+      <select id="colaborador-dupla" disabled>
+        <option value="">Selecione a dupla</option>
+      </select>
+    </div>
+    
+    <div class="observacao-box">
+      <label for="observacao">Observações:</label>
+      <textarea id="observacao" rows="3"></textarea>
+    </div>
+    
+    <div class="controle-box">
+      <h2>Controle Diário</h2>
+      <div class="tabela-controle">
+        <table id="tabela-controle-dia">
+          <thead>
+            <tr>
+              <th>Colaborador</th>
+              <th>Status</th>
+              <th>Última Saída</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-controle-dia">
+            <!-- Dados serão inseridos aqui -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    
+            <!-- Dados serão inseridos aqui -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div class="historico-box">
+      <h2>Histórico Recente</h2>
+      <div class="tabela-container">
+        <table id="tabela-historico">
+          <thead>
+            <tr>
+              <th>Colaborador(es)</th>
+              <th>Local</th>
+              <th>Data/Hora</th>
+              <th>Observações</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-tabela">
+            <!-- Dados serão inseridos aqui -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
